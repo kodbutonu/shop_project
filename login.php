@@ -45,7 +45,9 @@ if(isset($message)){
 ?>
    
 <div class="form-container">
-
+<div class="image">
+   <img src="images/login.jpg" alt="">
+  </div>
    <form action="" method="post">
       <h3>login now</h3>
       <input type="email" name="email" required placeholder="enter email" class="box">

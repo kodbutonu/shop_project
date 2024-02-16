@@ -1,0 +1,71 @@
+:root {
+    --pink: #ff00b7;
+    --purple: #ae00ff;
+    --blue: #3498db;
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #eee;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    --border: 2px solid var(--black);
+  }
+  
+  .navbar {
+    background-color: var(--white); /* Set navbar background color to white */
+  }
+  
+  .navbar-brand {
+    color: var(--black) !important; /* Set brand text color to black */
+    font-weight: bold; /* Make the font bold */
+    font-size: 24px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Add letter spacing for better readability */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: var(--black); /* Set toggler icon color to black */
+  }
+  
+  .navbar-nav .nav-link {
+    color: var(--black) !important; /* Set nav link text color to black */
+  }
+  
+  .navbar-toggler {
+    border-color: var(--black); /* Set toggler button border color to black */
+  }
+  
+  /* Add animation class for smooth appearance */
+  .navbar-animate {
+    animation: fadeInDown 0.5s ease-in-out;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Add this to your existing CSS file */
+.navbar .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* You can customize the styling further based on your design preferences */
+  
+  
+  /* Custom CSS for the profile icon */
+  .profile-icon {
+    color: var(--black);
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  

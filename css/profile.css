@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --pink:#ff00b7;
+   --purple:#ae00ff;
+   --blue:#3498db;
+   --red:#e74c3c;
+   --orange:#f39c12;
+   --black:#333;
+   --white:#fff;
+   --light-bg:#eee;
+   --box-shadow:0 5px 10px rgba(0,0,0,.1);
+   --border:2px solid var(--black);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+   width: 10px;
+   height: 5px;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+body{
+    background: linear-gradient(to right,var(--purple),var(--pink));
+    background-size: 200% 100%;
+    animation: gradientAnimation 5s infinite alternate; /* 5 saniye süren, alternatif olarak devam eden bir animasyon */
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+ }
+ @keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+ }
+ .btn-danger {
+    background: linear-gradient(to right,var(--red),var(--pink));
+    background-size: 200% 100%;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.5s ease;
+}
+.btn-success {
+    background: linear-gradient(to right,var(--purple),var(--pink));
+    background-size: 200% 100%;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.5s ease;
+}
+
+
+.btn {
+    background: linear-gradient(to right,var(--blue),var(--pink));
+    background-size: 200% 100%;
+    color: #fff;
+    padding: -8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.5s ease;
+}
+
+.btn:hover {
+    transform: translateX(-5px);
+    animation: shake 0.5s ease infinite alternate, gradientAnimation 5s infinite alternate; /* Titreme ve renk geçişi animasyonları */
+}
+
+.btn-success {
+    background: linear-gradient(to right,var(--purple),var(--pink));
+}
+
+.btn-success:hover {
+    transform: translateX(-5px);
+    animation: shake 0.5s ease infinite alternate, gradientAnimation 5s infinite alternate; /* Titreme ve renk geçişi animasyonları */
+}
+
+.btn-danger {
+    background: linear-gradient(to right,var(--red),var(--pink));
+}
+
+.btn-danger:hover {
+    transform: translateX(-5px);
+    animation: shake 0.5s ease infinite alternate, gradientAnimation 5s infinite alternate; /* Titreme ve renk geçişi animasyonları */
+}
+
+.user-profile {
+    text-align: center; /* Profil bilgilerini merkezle */
+}
+
+.profile-image {
+    margin-bottom: 20px; /* Profil resmi ile altındaki eleman arasına boşluk ekleyin */
+}
+
+.flex {
+    display: flex;
+    align-items: center; /* Elemanları ortalamak için kullanın */
+    margin-top: 20px; /* Grup ile üstteki eleman arasına boşluk ekleyin */
+}
+
+.edit-form {
+    display: flex;
+    text-align: left; /* Düzenleme formunu sola hizalayın */
+    margin-top: 20px; /* Form ile üstteki eleman arasına boşluk ekleyin */
+}
+/* Stil dosyanızdaki CSS kodları */
+.flex-1 {
+    display: flex;
+    flex-direction: column; /* Elemanları dikey düzende hizalayın */
+    align-items: center; /* Elemanları ortalamak için kullanın */
+}
+
+.flex-1 label,
+.flex-1 input {
+    margin-bottom: 10px; /* Label ve input elemanları arasına boşluk ekleyin */
+}
+
+.flex-1 input[type="text"],
+.flex-1 input[type="email"] {
+    width: 100%; /* Input genişliğini 100% yapın */
+    padding: 8px; /* Input içeriğine iç boşluk ekleyin */
+    box-sizing: border-box; /* Kutu modelini iç içe geçirme yapın */
+}
+/* CSS dosyanızdaki stiller */
+.edit-form input[type="text"],
+.edit-form input[type="email"] {
+    border: 2px solid var(--blue); /* Çerçeve rengi */
+    padding: 8px; /* Çerçeve içindeki içerik ile arasındaki boşluk */
+    margin-bottom: 10px; /* Girdi alanları arasındaki boşluk */
+    width: 100%; /* Girdi alanlarını genişliği dolduracak şekilde genişlet */
+    box-sizing: border-box; /* Çerçeve genişliği ve içerik arasındaki boşluğu ayarla */
+    transition: border 0.3s ease; /* Geçiş efekti */
+}
+
+.edit-form input[type="text"]:focus,
+.edit-form input[type="email"]:focus {
+    border: 2px solid var(--purple); /* Girdi alanı odaklandığında çerçeve rengini değiştir */
+}
+
+.edit-form label,
+.edit-form input {
+    display: block; /* Label ve input elemanlarını blok olarak düzenleyin */
+    margin-bottom: 10px; /* Label ve input elemanları arasına boşluk ekleyin */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around; /* Butonları yatay düzende hizalayın */
+    margin-top: 20px; /* Butonlar ile üstteki eleman arasına boşluk ekleyin */
+}

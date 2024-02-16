@@ -185,7 +185,17 @@ body{
    max-width: 1200px;
    padding-bottom: 70px;
 }
-
+.user-profile{
+   height: auto;
+   width: auto;
+}
+.user-profile img {
+   padding: 20px;
+   height: auto;
+   width: auto;
+   max-width: 300px;
+   border-radius: 50%;
+}
 .container .heading{
    text-align: center;
    margin-bottom: 20px;
@@ -203,6 +213,7 @@ body{
    border-radius: 5px;
    margin:20px auto;
    max-width: 500px;
+   height: 80%;
 }
 
 .container .user-profile p{
